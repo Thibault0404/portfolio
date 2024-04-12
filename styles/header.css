@@ -1,0 +1,68 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+
+.mid {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 30%;
+}
+
+.contact-btn {
+  font-weight: 600;
+  border: 1px solid black;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.contact-btn:hover {
+  background-color: black;
+  color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.logo {
+  width: 10%;
+  height: 10%;
+}
+
+@media (max-width: 768px) {
+
+  /* Styles pour tablettes */
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .mid {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .logo {
+    width: 30%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* Styles pour téléphones mobiles */
+  .contact-btn {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .logo {
+    width: 50%;
+  }
+}
